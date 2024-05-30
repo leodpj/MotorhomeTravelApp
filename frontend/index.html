@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa - Motorhome Travel App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">Motorhome Travel App</div>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Filtros</h2>
+            <input type="text" placeholder="Buscar campings">
+            <input type="text" placeholder="Localização">
+            <input type="number" placeholder="Preço máximo">
+        </div>
+        <div class="map-container">
+            <div id="map" class="map"></div>
+        </div>
+    </div>
+
+    <!-- Script para carregar o mapa (substituir com integração real do mapa) -->
+    <script>
+        function initMap() {
+            var mapOptions = {
+                center: new google.maps.LatLng(-34.397, 150.644),
+                zoom: 8,
+            };
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        }
+        window.onload = initMap;
+    </script>
+</body>
+</html>
